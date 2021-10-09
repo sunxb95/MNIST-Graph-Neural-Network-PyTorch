@@ -11,3 +11,4 @@ from scipy.spatial.distance import cdist
 
 class GraphNet(nn.Module):
     def __init__(self, image_size = 28, pred_edge = False):
+        super(GraphNet, self).__init__()
