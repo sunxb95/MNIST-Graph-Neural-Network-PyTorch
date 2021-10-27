@@ -22,3 +22,4 @@ class GraphNet(nn.Module):
             coord = np.stack((col, row), axis = 2).reshape(-1, 2)  # (784 x 2)
             coord_normalized = (coord - np.mean(coord, axis = 0)) / (np.std(coord, axis = 0) + 1e-5) # Normalize the matrix
             coord_normalized = torch.from_numpy(coord_normalized).float() # (784 x 2)
+            adjacency_matrix = torch.cat((coord_normalized.unsqueeze(0).repeat(N, 1,  1),
