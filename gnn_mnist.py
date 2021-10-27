@@ -20,3 +20,5 @@ class GraphNet(nn.Module):
             # Learn the adjacency matrix (learn to predict the edge between any pair of pixels)
             col, row = np.meshgrid(np.arange(image_size), np.arange(image_size)) # (28 x 28) Explanation: https://www.geeksforgeeks.org/numpy-meshgrid-function/
             coord = np.stack((col, row), axis = 2).reshape(-1, 2)  # (784 x 2)
+            coord_normalized = (coord - np.mean(coord, axis = 0)) / (np.std(coord, axis = 0) + 1e-5) # Normalize the matrix
+            coord_normalized = torch.from_numpy(coord_normalized).float() # (784 x 2)
