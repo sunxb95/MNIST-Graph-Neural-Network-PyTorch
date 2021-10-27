@@ -18,3 +18,5 @@ class GraphNet(nn.Module):
         # Create the adjacency matrix of size (N X N)
         if pred_edge:
             # Learn the adjacency matrix (learn to predict the edge between any pair of pixels)
+            col, row = np.meshgrid(np.arange(image_size), np.arange(image_size)) # (28 x 28) Explanation: https://www.geeksforgeeks.org/numpy-meshgrid-function/
+            coord = np.stack((col, row), axis = 2).reshape(-1, 2)  # (784 x 2)
