@@ -16,3 +16,5 @@ class GraphNet(nn.Module):
         N = image_size ** 2 # Number of pixels in the image
         self.fc = nn.Linear(N, 10, bias = False)
         # Create the adjacency matrix of size (N X N)
+        if pred_edge:
+            # Learn the adjacency matrix (learn to predict the edge between any pair of pixels)
