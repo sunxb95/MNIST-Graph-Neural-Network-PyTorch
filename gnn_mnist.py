@@ -23,3 +23,6 @@ class GraphNet(nn.Module):
             coord_normalized = (coord - np.mean(coord, axis = 0)) / (np.std(coord, axis = 0) + 1e-5) # Normalize the matrix
             coord_normalized = torch.from_numpy(coord_normalized).float() # (784 x 2)
             adjacency_matrix = torch.cat((coord_normalized.unsqueeze(0).repeat(N, 1,  1),
+                                    coord_normalized.unsqueeze(1).repeat(1, N, 1)), dim=2) # (784 x 784 x 4)
+            self.pred_edge_fc = nn.Sequential(nn.Linear(4, 64),
+                                              nn.ReLU(), 
