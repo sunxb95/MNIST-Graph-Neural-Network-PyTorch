@@ -26,3 +26,4 @@ class GraphNet(nn.Module):
                                     coord_normalized.unsqueeze(1).repeat(1, N, 1)), dim=2) # (784 x 784 x 4)
             self.pred_edge_fc = nn.Sequential(nn.Linear(4, 64),
                                               nn.ReLU(), 
+                                              nn.Linear(64, 1),
