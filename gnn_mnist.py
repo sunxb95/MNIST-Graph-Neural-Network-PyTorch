@@ -27,3 +27,4 @@ class GraphNet(nn.Module):
             self.pred_edge_fc = nn.Sequential(nn.Linear(4, 64),
                                               nn.ReLU(), 
                                               nn.Linear(64, 1),
+                                              nn.Tanh())
