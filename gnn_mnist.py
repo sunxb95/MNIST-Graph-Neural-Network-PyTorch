@@ -33,3 +33,5 @@ class GraphNet(nn.Module):
             # Use a pre-computed adjacency matrix
             A = self.precompute_adjacency_images(image_size)
             self.register_buffer('A', A) # not to be considered a model paramater that is updated during training
+
+    def forward(self, x):
