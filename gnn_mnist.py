@@ -28,3 +28,5 @@ class GraphNet(nn.Module):
                                               nn.ReLU(), 
                                               nn.Linear(64, 1),
                                               nn.Tanh())
+            self.register_buffer('adjacency_matrix', adjacency_matrix) # not to be considered a model paramater that is updated during training
+        else:
