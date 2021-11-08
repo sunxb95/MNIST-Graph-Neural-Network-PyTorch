@@ -30,3 +30,6 @@ class GraphNet(nn.Module):
                                               nn.Tanh())
             self.register_buffer('adjacency_matrix', adjacency_matrix) # not to be considered a model paramater that is updated during training
         else:
+            # Use a pre-computed adjacency matrix
+            A = self.precompute_adjacency_images(image_size)
+            self.register_buffer('A', A) # not to be considered a model paramater that is updated during training
