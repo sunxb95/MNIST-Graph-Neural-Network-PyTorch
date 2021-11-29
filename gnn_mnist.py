@@ -35,3 +35,4 @@ class GraphNet(nn.Module):
             self.register_buffer('A', A) # not to be considered a model paramater that is updated during training
 
     def forward(self, x):
+        '''
