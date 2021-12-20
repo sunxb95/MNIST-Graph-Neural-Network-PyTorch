@@ -36,3 +36,6 @@ class GraphNet(nn.Module):
 
     def forward(self, x):
         '''
+        x: image (batch_size x 1 x image_width x image_height)
+        '''
+        B = x.size(0) # 64
