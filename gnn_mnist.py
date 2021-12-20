@@ -39,3 +39,5 @@ class GraphNet(nn.Module):
         x: image (batch_size x 1 x image_width x image_height)
         '''
         B = x.size(0) # 64
+        if self.pred_edge:
+            self.A = self.pred_edge_fc(self.adjacency_matrix).squeeze() # (784 x 784) --> predicted edge map
