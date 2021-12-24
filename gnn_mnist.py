@@ -41,3 +41,6 @@ class GraphNet(nn.Module):
         B = x.size(0) # 64
         if self.pred_edge:
             self.A = self.pred_edge_fc(self.adjacency_matrix).squeeze() # (784 x 784) --> predicted edge map
+
+        avg_neighbor_features = (torch.bmm(self.A.unsqueeze(0).expand(B, -1, -1), 
+                                            x.view(B, -1, 1)).view(B, -1)) # (64 X 784)
