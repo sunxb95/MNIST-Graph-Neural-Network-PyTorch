@@ -47,3 +47,5 @@ class GraphNet(nn.Module):
         return self.fc(avg_neighbor_features)
 
     @staticmethod
+    # Static method knows nothing about the class and just deals with the parameters.
+    def precompute_adjacency_images(image_size):
