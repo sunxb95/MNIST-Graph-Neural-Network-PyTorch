@@ -44,3 +44,6 @@ class GraphNet(nn.Module):
 
         avg_neighbor_features = (torch.bmm(self.A.unsqueeze(0).expand(B, -1, -1), 
                                             x.view(B, -1, 1)).view(B, -1)) # (64 X 784)
+        return self.fc(avg_neighbor_features)
+
+    @staticmethod
