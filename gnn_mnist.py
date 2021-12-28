@@ -49,3 +49,5 @@ class GraphNet(nn.Module):
     @staticmethod
     # Static method knows nothing about the class and just deals with the parameters.
     def precompute_adjacency_images(image_size):
+        print('precompute_adjacency_images')
+        col, row = np.meshgrid(np.arange(image_size), np.arange(image_size)) # (28 x 28) Explanation: https://www.geeksforgeeks.org/numpy-meshgrid-function/
