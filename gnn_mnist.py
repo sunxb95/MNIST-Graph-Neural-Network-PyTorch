@@ -53,3 +53,4 @@ class GraphNet(nn.Module):
         col, row = np.meshgrid(np.arange(image_size), np.arange(image_size)) # (28 x 28) Explanation: https://www.geeksforgeeks.org/numpy-meshgrid-function/
         coord = np.stack((col, row), axis = 2).reshape(-1, 2) / image_size # (784 x 2) --> normalize
         dist = cdist(coord, coord) # compute distance between every pair of pixels
+        sigma = 0.05 * np.pi # width of the Gaussian (can be a hyperparameter while training a model)
