@@ -54,3 +54,4 @@ class GraphNet(nn.Module):
         coord = np.stack((col, row), axis = 2).reshape(-1, 2) / image_size # (784 x 2) --> normalize
         dist = cdist(coord, coord) # compute distance between every pair of pixels
         sigma = 0.05 * np.pi # width of the Gaussian (can be a hyperparameter while training a model)
+        A = np.exp(-dist / sigma ** 2) # adjacency matrix of spatial similarity
