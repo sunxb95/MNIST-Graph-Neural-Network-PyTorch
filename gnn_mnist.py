@@ -55,3 +55,4 @@ class GraphNet(nn.Module):
         dist = cdist(coord, coord) # compute distance between every pair of pixels
         sigma = 0.05 * np.pi # width of the Gaussian (can be a hyperparameter while training a model)
         A = np.exp(-dist / sigma ** 2) # adjacency matrix of spatial similarity
+        A[A < 0.01] = 0 # suppress values less than 0.01
