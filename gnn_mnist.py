@@ -59,3 +59,4 @@ class GraphNet(nn.Module):
         A = torch.from_numpy(A).float()
 
         # Normalization as per (Kipf & Welling, ICLR 2017)
+        D = A.sum(1)  # nodes degree (N,)
