@@ -61,3 +61,4 @@ class GraphNet(nn.Module):
         # Normalization as per (Kipf & Welling, ICLR 2017)
         D = A.sum(1)  # nodes degree (N,)
         D_hat = (D + 1e-5) ** (-0.5)
+        A_hat = D_hat.view(-1, 1) * A * D_hat.view(1, -1)  # N,N
