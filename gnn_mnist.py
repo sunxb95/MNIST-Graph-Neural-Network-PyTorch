@@ -65,3 +65,6 @@ class GraphNet(nn.Module):
 
         # Some additional trick I found to be useful
         A_hat[A_hat > 0.0001] = A_hat[A_hat > 0.0001] - 0.2
+
+        print(A_hat[:10, :10])
+        return A_hat
