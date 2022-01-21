@@ -62,3 +62,6 @@ class GraphNet(nn.Module):
         D = A.sum(1)  # nodes degree (N,)
         D_hat = (D + 1e-5) ** (-0.5)
         A_hat = D_hat.view(-1, 1) * A * D_hat.view(1, -1)  # N,N
+
+        # Some additional trick I found to be useful
+        A_hat[A_hat > 0.0001] = A_hat[A_hat > 0.0001] - 0.2
