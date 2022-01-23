@@ -70,3 +70,5 @@ class GraphNet(nn.Module):
         return A_hat
 
 
+
+def train(args, model, device, train_loader, optimizer, epoch):
