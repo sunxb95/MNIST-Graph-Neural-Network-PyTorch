@@ -72,3 +72,4 @@ class GraphNet(nn.Module):
 
 
 def train(args, model, device, train_loader, optimizer, epoch):
+    model.train()
