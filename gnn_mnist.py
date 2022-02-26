@@ -77,3 +77,5 @@ def train(args, model, device, train_loader, optimizer, epoch):
         data, target = data.to(device), target.to(device)
         optimizer.zero_grad()
         output = model(data)
+        # Cross entropy loss
+        loss = F.cross_entropy(output, target)
