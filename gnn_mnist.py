@@ -79,3 +79,7 @@ def train(args, model, device, train_loader, optimizer, epoch):
         output = model(data)
         # Cross entropy loss
         loss = F.cross_entropy(output, target)
+        loss.backward()
+        optimizer.step()
+        if batch_idx % 1000 == 0:
+            print('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(
