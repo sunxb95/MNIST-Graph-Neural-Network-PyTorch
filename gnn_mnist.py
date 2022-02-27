@@ -87,3 +87,4 @@ def train(args, model, device, train_loader, optimizer, epoch):
                 100. * batch_idx / len(train_loader), loss.item()))
 
 def test(args, model, device, test_loader):
+    model.eval()
