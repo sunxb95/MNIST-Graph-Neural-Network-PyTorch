@@ -88,3 +88,5 @@ def train(args, model, device, train_loader, optimizer, epoch):
 
 def test(args, model, device, test_loader):
     model.eval()
+    test_loss = 0
+    correct = 0
