@@ -90,3 +90,5 @@ def test(args, model, device, test_loader):
     model.eval()
     test_loss = 0
     correct = 0
+    with torch.no_grad():
+        for data, target in test_loader:
