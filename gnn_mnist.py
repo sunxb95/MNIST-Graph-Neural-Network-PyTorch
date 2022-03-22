@@ -105,3 +105,6 @@ def test(args, model, device, test_loader):
 
 def main():
     parser = argparse.ArgumentParser(description = 'GNN PyTorch Example on MNIST')
+    parser.add_argument('--batch_size', type=int, default=64,
+                        help='input batch size')
+    parser.add_argument('--epochs', type=int, default=1,
