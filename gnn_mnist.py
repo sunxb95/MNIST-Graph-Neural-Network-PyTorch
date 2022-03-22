@@ -104,3 +104,4 @@ def test(args, model, device, test_loader):
             100. * correct / len(test_loader.dataset)))
 
 def main():
+    parser = argparse.ArgumentParser(description = 'GNN PyTorch Example on MNIST')
