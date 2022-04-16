@@ -112,3 +112,4 @@ def main():
     parser.add_argument('--lr', type=float, default=1e-3,
                         help='learning rate')
     parser.add_argument('--pred_edge', action='store_true', default=False, 
+                        help='predict edges instead of using predefined ones')
