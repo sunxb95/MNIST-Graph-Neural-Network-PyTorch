@@ -114,3 +114,5 @@ def main():
     parser.add_argument('--pred_edge', action='store_true', default=False, 
                         help='predict edges instead of using predefined ones')
     parser.add_argument('--seed', type=int, default=1, 
+                        help='random seed')
+    args = parser.parse_args()
