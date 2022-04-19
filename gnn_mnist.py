@@ -116,3 +116,5 @@ def main():
     parser.add_argument('--seed', type=int, default=1, 
                         help='random seed')
     args = parser.parse_args()
+
+    use_cuda = True
