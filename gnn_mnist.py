@@ -118,3 +118,5 @@ def main():
     args = parser.parse_args()
 
     use_cuda = True
+
+    torch.manual_seed(args.seed)
