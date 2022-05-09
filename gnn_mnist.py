@@ -124,3 +124,4 @@ def main():
     #device = torch.device("cuda" if use_cuda else "cpu")
     device = "cpu"
     kwargs = {'num_workers': 1, 'pin_memory': True} if use_cuda else {}
+    train_loader = torch.utils.data.DataLoader(
