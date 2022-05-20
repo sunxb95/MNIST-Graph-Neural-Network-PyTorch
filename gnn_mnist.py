@@ -125,3 +125,5 @@ def main():
     device = "cpu"
     kwargs = {'num_workers': 1, 'pin_memory': True} if use_cuda else {}
     train_loader = torch.utils.data.DataLoader(
+        datasets.MNIST('../data', train=True, download=True,
+                       transform=transforms.Compose([
