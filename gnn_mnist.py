@@ -137,3 +137,4 @@ def main():
             transforms.Normalize((0.1307,), (0.3081,))
         ])),
         batch_size=args.batch_size, shuffle=False, **kwargs)    
+    
