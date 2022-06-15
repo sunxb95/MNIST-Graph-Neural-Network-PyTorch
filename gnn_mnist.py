@@ -138,3 +138,5 @@ def main():
         ])),
         batch_size=args.batch_size, shuffle=False, **kwargs)    
     
+    model = GraphNet()
+    model.to(device)
