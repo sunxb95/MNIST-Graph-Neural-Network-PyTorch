@@ -140,3 +140,5 @@ def main():
     
     model = GraphNet()
     model.to(device)
+
+    optimizer = optim.SGD(model.parameters(), lr = args.lr, weight_decay = 1e-4)
