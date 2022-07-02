@@ -144,3 +144,6 @@ def main():
     optimizer = optim.SGD(model.parameters(), lr = args.lr, weight_decay = 1e-4)
 
     print('number of trainable parameters: %d' %
+          np.sum([np.prod(p.size()) if p.requires_grad else 0 for p in model.parameters()]))
+
+    for epoch in range(1, args.epochs + 1):
