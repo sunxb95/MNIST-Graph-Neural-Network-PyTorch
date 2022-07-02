@@ -147,3 +147,4 @@ def main():
           np.sum([np.prod(p.size()) if p.requires_grad else 0 for p in model.parameters()]))
 
     for epoch in range(1, args.epochs + 1):
+        train(args, model, device, train_loader, optimizer, epoch)
