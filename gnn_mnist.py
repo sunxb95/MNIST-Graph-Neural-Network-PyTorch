@@ -148,3 +148,4 @@ def main():
 
     for epoch in range(1, args.epochs + 1):
         train(args, model, device, train_loader, optimizer, epoch)
+        test(args, model, device, test_loader)
