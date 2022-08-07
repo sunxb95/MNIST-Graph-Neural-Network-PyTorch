@@ -1,1 +1,1 @@
-# MNIS
+# MNIST
