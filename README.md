@@ -1,1 +1,1 @@
-# MNIST-Graph
+# MNIST-Graph-N
