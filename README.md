@@ -1,1 +1,1 @@
-# MNIST-Graph-Neu
+# MNIST-Graph-Neur
