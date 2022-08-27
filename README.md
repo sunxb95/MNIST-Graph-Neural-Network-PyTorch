@@ -1,1 +1,1 @@
-# MNIST-Graph-Neural-Ne
+# MNIST-Graph-Neural-Net
