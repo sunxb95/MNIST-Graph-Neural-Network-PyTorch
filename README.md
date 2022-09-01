@@ -1,1 +1,1 @@
-# MNIST-Graph-Neural-Network-
+# MNIST-Graph-Neural-Network-Py
