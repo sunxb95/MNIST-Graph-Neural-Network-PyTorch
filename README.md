@@ -1,1 +1,1 @@
-# MNIST-Graph-Neural-Network-PyTorc
+# MNIST-Graph-Neural-Network-PyTorch
