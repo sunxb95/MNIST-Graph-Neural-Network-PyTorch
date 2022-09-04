@@ -1,3 +1,3 @@
 # MNIST-Graph-Neural-Network-PyTorch
 
-Exampl
+Example c
