@@ -1,3 +1,3 @@
 # MNIST-Graph-Neural-Network-PyTorch
 
-Example code to tra
+Example code to trai
