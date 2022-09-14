@@ -1,3 +1,3 @@
 # MNIST-Graph-Neural-Network-PyTorch
 
-Example code to train a Graph Neur
+Example code to train a Graph Neura
