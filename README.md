@@ -7,4 +7,4 @@ Example code to train a Graph Neural Network on the MNIST dataset in PyTorch for
 - Detailed Explanation: https://medium.com/@BorisAKnyazev/tutorial-on-graph-neural-networks-for-computer-vision-and-beyond-part-1-3d9fada3b80d
 - Implementation: https://github.com/bknyaz/examples/blob/master/fc_vs_graph_train.py
 
-#
+##
