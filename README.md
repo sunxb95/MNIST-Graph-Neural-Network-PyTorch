@@ -9,4 +9,5 @@ Example code to train a Graph Neural Network on the MNIST dataset in PyTorch for
 
 ## Running the Code
 
-To use precomputed adjacency mat
+To use precomputed adjacency matrix:
+
