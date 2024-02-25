@@ -11,4 +11,4 @@ Example code to train a Graph Neural Network on the MNIST dataset in PyTorch for
 
 To use precomputed adjacency matrix:
 
-`python gnn_
+`python gnn_m
