@@ -13,4 +13,4 @@ To use precomputed adjacency matrix:
 
 `python gnn_mnist.py`
 
-To use
+To use a 
