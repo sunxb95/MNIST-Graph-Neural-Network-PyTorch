@@ -15,4 +15,5 @@ To use precomputed adjacency matrix:
 
 To use a learned edge map:
 
-`python gnn_mnist.py --pred_edge
+`python gnn_mnist.py --pred_edge`
+
