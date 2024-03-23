@@ -17,4 +17,5 @@ To use a learned edge map:
 
 `python gnn_mnist.py --pred_edge`
 
-Other optional hyperparameter
+Other optional hyperparameters:
+
