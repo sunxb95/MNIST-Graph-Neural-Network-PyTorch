@@ -19,4 +19,4 @@ To use a learned edge map:
 
 Other optional hyperparameters:
 
-`python gnn_
+`python gnn_mn
