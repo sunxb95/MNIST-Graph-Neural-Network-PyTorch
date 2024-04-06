@@ -19,4 +19,4 @@ To use a learned edge map:
 
 Other optional hyperparameters:
 
-`python gnn_mnist.py --pred_edge --batch_size 64 --epochs
+`python gnn_mnist.py --pred_edge --batch_size 64 --epochs 10 
